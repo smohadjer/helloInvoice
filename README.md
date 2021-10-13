@@ -1,4 +1,4 @@
-# myInvoice
+# helloInvoice
 A web app that allows users create invoices in browser on any device
 
 # phase I
