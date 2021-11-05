@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font: 0.9em/1.25 arial, verdana, sans-serif;
+}
+
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin: 2em 0;
+}
+
+header {
+  margin: 4em 1em 1em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.customerAddress {
+  font-size: 1.2em;
+}
+
+.data tr td {
+  padding: 0;
+}
+
+.data td:first-child {
+  padding-right: 2em;
+  font-weight: bold;
+}
+
+main {
+  margin: 4em 1em;
+}
+
+main table  {
+  width: 100%;
+  border-spacing: 0;
+}
+
+main table tr {
+  text-align: left;
+}
+
+main table tr td,
+main table tr th {
+  border-bottom: solid 1px #999;
+  padding: 0.35em 0;
+}
+
+main table tr td {
+  white-space: nowrap;
+  padding-right: 2em;
+  vertical-align: top;
+}
+
+main table tr th:last-child,
+main table tr td:last-child {
+  text-align: right;
+}
+
+main table tr.total td {
+  font-weight: bold;
+  padding-top: 1em;
+  border: none;
+}
+
+main table tr td:last-child {
+  padding-right: 0;
+}
+
+main table tr td:first-child {
+  white-space: normal;
+}
+
+footer {
+  margin: 4em 1em 0;
+  border-top: solid 1px #999;
+  padding: 1em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 0.5em;
+  width: calc(100% - 2em);
+}
+
+.footer__data {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.bank {
+  margin: 0;
+}

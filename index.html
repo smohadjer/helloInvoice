@@ -2,19 +2,71 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>HTML5</title>
+        <title>Invoice</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="style.css" rel="stylesheet" />
     </head>
     <body>
-        <form method="post" action="database.php">
-            <div>
-                <label for="firstname">Your Name:</label>
-                <input name="firstname" />
-            </div>
-            <div>
-              <button>Submit</button>
-            </div>
-        </form>           
+      <h1>Rechnung</h1>
+      <header> 
+        <div>
+          <p class="myAddress">Saeid Mohadjer<br />
+            Denzlingerstr. 20<br />
+            79108 Freiburg</p>
+          <p class="customerAddress">Virtual Identity AG<br />
+            Grünwälderstraße 10-14<br />
+            79098 Freiburg</p>
+        </div>
+        <table class="data">
+          <tr><td>Datum</td><td>02.01.2021</td></tr>
+          <tr><td>Rechnungs-Nr.</td><td>20243</td></tr>
+          <tr><td>Laufzeit</td><td>01.12.2020 – 31.12.2020</td></tr>
+          <tr><td>Bestellung Nr.</td><td>601885</td></tr>
+          <tr><td>Projektleiter</td><td>Benjamin Konopka</td></tr>
+          <tr><td>Stundensatz</td><td>68,00 Euro</td></tr>
+        </table>
+      </header>
+      <main>
+        <table>
+          <tr>
+            <th>Beschreibung</th>
+            <th>Menge</th>
+            <th>Betrag</th>
+          </tr>
+          <tr>
+            <td>VI Projekte (Arbeitszeitnachweis: report_2020-12-01_2020-
+              12-31_vi.pdf)</td>
+            <td>64 Std 30'</td>
+            <td>4386,00 EUR</td>
+          </tr>
+          <tr>
+            <td>Umsatzsteuer</td>
+            <td>16%</td>
+            <td>701,76 EUR</td>
+          </tr>
+          <tr class="total">
+            <td>Rechnungsbetrag</td>
+            <td></td>
+            <td>5087,76 EUR</td>
+          </tr>
+        </table>
+      </main>
+      <footer>
+        <ul class="footer__data">
+          <li>Ust-ID: DE287169201</li>
+          <li>Steuer Nr.: 06169/58063</li>
+          <li>Telefon: +49 761 4296 3565</li>
+          <li>Email: saeid@fastmail.fm</li>
+        </ul>
+        <p class="bank">
+          <strong>Bankverbindung</strong><br />
+          Kontoinhaber: Saeid Mohadjer<br />
+          Deutsche Bank AG<br />
+          BLZ: 55070024<br />
+          Konto: 023564800<br />
+          SWIFT/BIC: DEUTDEDBMAI<br />
+          IBAN: DE35 5507 0024 0023 5648 00</p>
+      </footer>       
     </body>
 </html>
