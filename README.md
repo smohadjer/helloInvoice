@@ -1,5 +1,5 @@
 # helloInvoice
-A web app that allows users create invoices in browser on any device
+A web app that allows users create and manage their invoices online and from any device.
 
 # Phase I functionalities
 - Create a new invoice 
