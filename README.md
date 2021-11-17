@@ -1,5 +1,7 @@
+https://smohadjer.github.io/helloInvoice/
+
 # helloInvoice
-A web app that allows users create and manage their invoices online and from any device.
+A web app that allows users create and manage their invoices online and from any device. 
 
 # Phase I functionalities
 - Create a new invoice 
