@@ -1,0 +1,82 @@
+{
+  "title": "Rechnung",
+  "address": {
+    "name": "Saeid Mohadjer",
+    "street": "Denzlingerstr. 20",
+    "city": "Freiburg",
+    "postal-code": "79108",
+    "phone": {
+      "label": "Telefon",
+      "value": "+49 761 4296 3565"
+    },
+    "email": {
+      "label": "Email",
+      "value": "saeid@fastmail.fm"
+    }
+  },
+  "customer": {
+    "name": "Virtual Identity AG",
+    "street": "Grünwälderstraße 10-14",
+    "city": "Freiburg",
+    "postal-code": "79098"
+  },
+  "date": {
+    "label": "Datum",
+    "value": "02.01.2021"
+  },
+  "invoice-number": {
+    "label": "Rechnungs-Nr.",
+    "value": "20243"
+  },
+  "period": {
+    "label": "Laufzeit",
+    "value": "01.12.2020 – 31.12.2020"
+  },
+  "order-number": {
+    "label": "Bestellung Nr.",
+    "value": "601885"
+  },
+  "invoice-issuer": {
+    "label": "Projektleiter",
+    "value": "Benjamin Konopka"
+  },
+  "rate": {
+    "label": "Stundensatz",
+    "value": "70,00 Euro"
+  },
+  "content": [
+    {
+      "description": "XZY Projekte (Arbeitszeitnachweis: report_2020-12-01_2020-12-31_vi.pdf)",
+      "hours": "64 Std 30'",
+      "amount": "4386,00 EUR",
+      "vat": "19%"
+    }
+  ],
+  "bank": {
+    "title": "Banking Information:",
+    "account-holder": "Saeid Mohadjer",
+    "name": "Deutsche Bank AG",
+    "code": {
+      "label": "BLZ",
+      "value": "55070024"
+    },
+    "account": {
+      "label": "Konto",
+      "value": "023564800"
+    },
+    "iban": {
+      "label": "IBAN",
+      "value": "DE35 5507 0024 0023 5648 00"
+    }
+  },
+  "tax": {
+    "id": {
+      "label": "Ust-ID",
+      "value": "DE287169201"
+    },
+    "number": {
+      "label": "Steuer Nr.",
+      "value": "06169/58063"
+    }
+  }
+}

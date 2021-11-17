@@ -44,7 +44,7 @@ main table tr {
 
 main table tr td,
 main table tr th {
-  border-bottom: solid 1px #999;
+  border-bottom: solid 1px #ccc;
   padding: 0.35em 0;
 }
 
@@ -75,14 +75,11 @@ main table tr td:first-child {
 
 footer {
   margin: 4em 1em 0;
-  border-top: solid 1px #999;
+  border-top: solid 1px #ccc;
   padding: 1em 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  position: absolute;
-  bottom: 0.5em;
-  width: calc(100% - 2em);
 }
 
 .footer__data {
