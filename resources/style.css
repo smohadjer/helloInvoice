@@ -117,7 +117,13 @@ footer {
 }
 
 footer .bank {
-  margin: 0;
+  margin: 1em 0 0;
+}
+
+@media (min-width: 768px) {
+  footer .bank {
+    margin-top: 0;
+  }
 }
 
 aside .download {
