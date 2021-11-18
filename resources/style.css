@@ -3,17 +3,31 @@ body {
   font: 0.9em/1.25 arial, verdana, sans-serif;
 }
 
+@media (min-width: 768px) {
+  body {
+    display: flex;
+  }
+}
+
 h1 {
   font-size: 1.8em;
   text-align: center;
-  margin: 2em 0;
 }
 
 header {
-  margin: 4em 1em 1em;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  margin: 4em 0 1em;
+}
+
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.myAddress {
+  margin: 0;
 }
 
 .customerAddress {
@@ -29,57 +43,71 @@ header {
   font-weight: bold;
 }
 
-main {
-  margin: 4em 1em;
+aside {
+  background: #eee;
+  padding: 1em;
 }
 
-main table  {
+main {
+  padding: 1em;
+}
+
+.content {
+  margin-top: 5em;
+}
+
+.content table {
   width: 100%;
   border-spacing: 0;
 }
 
-main table tr {
+.content table tr {
   text-align: left;
 }
 
-main table tr td,
-main table tr th {
+.content table tr td,
+.content table tr th {
   border-bottom: solid 1px #ccc;
   padding: 0.35em 0;
 }
 
-main table tr td {
+.content table tr td {
   white-space: nowrap;
   padding-right: 2em;
   vertical-align: top;
 }
 
-main table tr th:last-child,
-main table tr td:last-child {
+.content table tr th:last-child,
+.content table tr td:last-child {
   text-align: right;
 }
 
-main table tr.total td {
+.content table tr.total td {
   font-weight: bold;
   padding-top: 1em;
   border: none;
 }
 
-main table tr td:last-child {
+.content table tr td:last-child {
   padding-right: 0;
 }
 
-main table tr td:first-child {
+.content table tr td:first-child {
   white-space: normal;
 }
 
 footer {
-  margin: 4em 1em 0;
+  margin: 4em 0 0;
   border-top: solid 1px #ccc;
   padding: 1em 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .footer__data {
@@ -88,6 +116,11 @@ footer {
   padding: 0;
 }
 
-.bank {
+footer .bank {
   margin: 0;
+}
+
+aside .download {
+  display: block;
+  margin: 2em 0;
 }

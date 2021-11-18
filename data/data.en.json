@@ -1,9 +1,11 @@
 {
-  "title": "Rechnung",
+  "template": "templates/ril.hbs",
+  "title": "Invoice",
   "address": {
     "name": "Saeid Mohadjer",
     "street": "Denzlingerstr. 20",
     "city": "Freiburg",
+    "country": "Germany",
     "postal-code": "79108",
     "phone": {
       "label": "Telefon",
@@ -15,22 +17,24 @@
     }
   },
   "customer": {
-    "name": "Virtual Identity AG",
-    "street": "Grünwälderstraße 10-14",
-    "city": "Freiburg",
-    "postal-code": "79098"
+    "name": "Recall InfoLink",
+    "street": "2812 N. 28th Street",
+    "city": "Boise",
+    "state": "Idaho",
+    "postal-code": "83703",
+    "country": "USA"
   },
   "date": {
-    "label": "Datum",
-    "value": "02.01.2021"
+    "label": "Date of issue",
+    "value": "02/01/2021"
   },
   "invoice-number": {
-    "label": "Rechnungs-Nr.",
+    "label": "Invoice number",
     "value": "20243"
   },
   "period": {
-    "label": "Laufzeit",
-    "value": "01.12.2020 – 31.12.2020"
+    "label": "Applicable period",
+    "value": "07/01/2020 – 07/31/2020"
   },
   "order-number": {
     "label": "Bestellung Nr.",
@@ -41,8 +45,8 @@
     "value": "Benjamin Konopka"
   },
   "rate": {
-    "label": "Stundensatz",
-    "value": "70,00 Euro"
+    "label": "Hourly rate",
+    "value": "70.00 Euro"
   },
   "content": [
     {

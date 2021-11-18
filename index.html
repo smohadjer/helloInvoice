@@ -6,9 +6,21 @@
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="resources/style.css" rel="stylesheet" />
+        <link href="resources/print.css" rel="stylesheet" />
         <script src="resources/handlebars.min-v4.7.7.js"></script>
     </head>
     <body>
+      <aside>
+        <p>User ID: 123456</p>
+        <p>Load invoice:<br />
+        <select id="invoice">
+          <option value="data/data.en.json">Invoice_recall_info_link</option>
+          <option selected value="data/data.de.json">Invoice_vi</option>
+        </select>
+        </p>
+        <button class="download">Save as PDF</button>
+      </aside>
+      <main></main>
       <script src="resources/app.js"></script>
     </body>
 </html>

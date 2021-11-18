@@ -1,0 +1,74 @@
+<h1>{{title}}</h1>
+<header> 
+  <div>
+    <p class="myAddress">
+      {{address.name}}<br />
+      {{address.street}}<br />
+      {{address.postal-code}} 
+      {{address.city}}
+      {{#if address.country}}
+      <br />{{address.country}}
+      {{/if}}
+    </p>
+    <p class="customerAddress">
+      {{customer.name}}<br />
+      {{customer.street}}<br />
+      {{customer.postal-code}} 
+      {{customer.city}}
+      {{#if customer.state}}
+      , {{customer.state}}
+      {{/if}}
+      {{#if customer.country}}
+      <br />{{customer.country}}
+      {{/if}}
+    </p>
+  </div>
+  <table class="data">
+    <tr><td>{{date.label}}</td><td>{{date.value}}</td></tr>
+    <tr><td>{{invoice-number.label}}</td><td>{{invoice-number.value}}</td></tr>
+    <tr><td>{{period.label}}</td><td>{{period.value}}</td></tr>
+    <tr><td>{{order-number.label}}</td><td>{{order-number.value}}</td></tr>
+    <tr><td>{{invoice-issuer.label}}</td><td>{{invoice-issuer.value}}</td></tr>
+    <tr><td>{{rate.label}}</td><td>{{rate.value}}</td></tr>
+  </table>
+</header>
+<section class="content">
+  <table>
+    <tr>
+      <th>Beschreibung</th>
+      <th>Menge</th>
+      <th>Betrag</th>
+    </tr>
+    <tr>
+      <td>VI Projekte (Arbeitszeitnachweis: report_2020-12-01_2020-
+        12-31_vi.pdf)</td>
+      <td>64 Std 30'</td>
+      <td>4386,00 EUR</td>
+    </tr>
+    <tr>
+      <td>Umsatzsteuer</td>
+      <td>16%</td>
+      <td>701,76 EUR</td>
+    </tr>
+    <tr class="total">
+      <td>Rechnungsbetrag</td>
+      <td></td>
+      <td>5087,76 EUR</td>
+    </tr>
+  </table>
+</section>
+<footer>
+  <ul class="footer__data">
+    <li>{{tax.id.label}}: {{tax.id.value}}</li>
+    <li>{{tax.number.label}}: {{tax.number.value}}</li>
+    <li>{{address.phone.label}}: {{address.phone.value}}</li>
+    <li>{{address.email.label}}: {{address.email.value}}</li>
+  </ul>
+  <p class="bank">
+    <strong>{{bank.title}}</strong><br />
+    {{bank.account-holder}}<br />
+    {{bank.name}}<br />
+    {{bank.code.label}}: {{bank.code.value}}<br />
+    {{bank.account.label}}: {{bank.account.value}}<br />
+    {{bank.iban.label}}: {{bank.iban.value}}</p>
+</footer>  

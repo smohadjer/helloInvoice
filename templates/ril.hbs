@@ -5,12 +5,19 @@
       {{address.name}}<br />
       {{address.street}}<br />
       {{address.postal-code}} 
-      {{address.city}}</p>
+      {{address.city}}
+      {{#if address.country}}
+      <br />{{address.country}}
+      {{/if}}
+    </p>
     <p class="customerAddress">
       {{customer.name}}<br />
       {{customer.street}}<br />
-      {{customer.postal-code}} 
-      {{customer.city}}</p>
+      {{customer.city}}, {{#if customer.state}}{{customer.state}},{{/if}} {{customer.postal-code}}
+      {{#if customer.country}}
+      <br />{{customer.country}}
+      {{/if}}
+    </p>
   </div>
   <table class="data">
     <tr><td>{{date.label}}</td><td>{{date.value}}</td></tr>
@@ -21,7 +28,7 @@
     <tr><td>{{rate.label}}</td><td>{{rate.value}}</td></tr>
   </table>
 </header>
-<main>
+<section class="content">
   <table>
     <tr>
       <th>Beschreibung</th>
@@ -45,7 +52,7 @@
       <td>5087,76 EUR</td>
     </tr>
   </table>
-</main>
+</section>
 <footer>
   <ul class="footer__data">
     <li>{{tax.id.label}}: {{tax.id.value}}</li>
